@@ -22,6 +22,10 @@ app.use(cors())
 app.use(express.json())
 app.use('/aliens', alientRouter)
 
+app.get('/', async(req, res) => {
+    res.send('Hi This is my app: Nakul :)')
+}) 
+
 app.get('/test', async(req, res) => {
     res.send('Every thing is working in correct way')
 }) 
